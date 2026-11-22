@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lisa Escudero</title>
+  <meta name="description" content="Lisa Escudero — Brand &amp; Creative, Communications, Operations.">
+  <meta name="theme-color" content="#3f5e80">
+  <style>
+    @font-face {
+      font-family: "ES Allianz";
+      src: url("ESAllianz-Regular.woff") format("woff");
+      font-weight: 400;
+      font-display: swap;
+    }
+    :root {
+      --slate: #3f5e80;    /* PEF / Slate */
+      --eggshell: #f9fff6; /* PEF / Eggshell */
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--slate);
+      color: var(--eggshell);
+      font: 24px/1 "ES Allianz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: -1px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+
+    /* Positions match the Figma frame "lisaes.com/landing" (1280 × 803) */
+    main {
+      position: relative;
+      min-height: 100vh;
+      padding-top: calc(241 / 803 * 100vh);
+      display: flex;
+      align-items: baseline;
+    }
+    .name    { margin-left: calc(79 / 1280 * 100vw); width: calc((389 - 79) / 1280 * 100vw); }
+    .areas   { margin: 0; }
+
+    @media (max-width: 700px) {
+      body { font-size: 22px; }
+      main { flex-direction: column; gap: 14px; padding: 28vh 24px 0; }
+      .name, .areas { margin-left: 0; width: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="name" style="font: inherit; margin-top: 0; margin-bottom: 0;">Lisa Escudero</h1>
+    <p class="areas"><a href="https://brand.lisaes.com">Brand &amp; Creative</a>, <a href="https://comms.lisaes.com">Communications</a>, Operations</p>
+  </main>
+</body>
+</html>
